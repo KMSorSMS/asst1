@@ -33,3 +33,5 @@ $(OBJDIR)/%.o: $(COMMONDIR)/%.cpp
 
 $(OBJDIR)/main.o: $(COMMONDIR)/CycleTimer.h
 
+bear: clean
+	http_proxy='' && https_proxy='' && bear -- make
