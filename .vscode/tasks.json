@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "prog1_mandelbrot_threads",
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/prog1_mandelbrot_threads && make",
+        }
+    ]
+}
