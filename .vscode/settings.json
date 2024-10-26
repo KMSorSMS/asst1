@@ -1,5 +1,5 @@
 {
     "clangd.arguments": [
-        "--compile-commands-dir=prog1_mandelbrot_threads/"
+        "--compile-commands-dir=prog2_vecintrin/"
     ]
 }

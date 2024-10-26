@@ -28,7 +28,33 @@
                 }
             ],
             "preLaunchTask": "prog1_mandelbrot_threads",
+        },
+        {
+            "name": "prog2_vecintrin",
+            "type": "cppdbg",
+            "request": "launch",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/prog2_vecintrin",
+            "program": "${cwd}/prog2_vecintrin/myexp",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "prog2_vecintrin",
         }
+
 
     ]
 }

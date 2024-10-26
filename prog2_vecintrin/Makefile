@@ -11,3 +11,6 @@ myexp: CS149intrin.o logger.o main.cpp
 
 clean:
 	rm -f *.o myexp *~
+
+bear: clean
+	http_proxy='' && https_proxy='' && bear -- make

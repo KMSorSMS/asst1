@@ -5,6 +5,12 @@
             "label": "prog1_mandelbrot_threads",
             "type": "shell",
             "command": "cd ${workspaceFolder}/prog1_mandelbrot_threads && make",
+        },
+        {
+            "label": "prog2_vecintrin",
+            "type": "shell",
+            "command": "cd ${workspaceFolder}/prog2_vecintrin && make",
         }
+
     ]
 }

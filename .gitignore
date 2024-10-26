@@ -4,3 +4,6 @@ compile_commands.json
 *.ppm
 mandelbrot
 .gdb_history
+myexp
+logger.o
+CS149intrin.o
