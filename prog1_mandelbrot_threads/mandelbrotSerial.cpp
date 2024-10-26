@@ -90,3 +90,28 @@ void mandelbrotSerial(
     }
 }
 
+//
+// mandelbrotStepSerial --
+//
+// compute the given offset pos of each row in the image
+void mandelbrotStepSerial(
+    float x0, float y0, float x1, float y1,
+    int width, int height,
+    int step, int offset,
+    int maxIterations,
+    int output[])
+{
+  float dx = (x1 - x0) / width;
+    float dy = (y1 - y0) / height;
+
+
+    for (int j = offset; j < height; j+=step) {
+        for (int i = 0; i < width; ++i) {
+            float x = x0 + i * dx;
+            float y = y0 + j * dy;
+
+            int index = (j * width + i);
+            output[index] = mandel(x, y, maxIterations);
+        }
+    }
+}
